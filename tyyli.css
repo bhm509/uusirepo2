@@ -1,0 +1,126 @@
+body {
+    color:black;
+    background-color:whitesmoke;
+    font-family: Georgia;
+    margin: 0px 0px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color:black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float:left;
+}
+
+header{
+    background-image: url(Kuvat/Rantakuva.jpg);
+    background-size: cover;
+    text-align:center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    font-size: 30px; 
+    color: white;
+}
+
+#toimintakehote {
+    border: 2px solid rgb(48, 34, 34);
+    border-radius: 30px;
+    background-color:midnightblue;
+    padding: 20px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+}
+
+footer{
+    font-family: paaotsikko, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-kuva img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 2vw;
+}
+
+@media only screen and (min-width: 1025px) {
+    #etusivu {
+        background-image: url(Kuvat/Rantakuva.jpg);
+        background-size: cover;
+        height: 400px;
+    }
+    #slogan {
+        font-size: 50px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 1024px) {
+        #etusivu {
+            background-image: url(Kuvat/Rantakuva.jpg);
+            background-size: cover;
+            height: 400px;
+        }
+        #slogan {
+            font-size: 40px;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .grid-container {
+            display: inline;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+          }
+}
+
+@media screen and (max-width: 500px) {
+    #etusivu {
+        background-image: url(Kuvat/Rantakuva.jpg);
+        background-size: cover;
+        height: 400px;
+    }
+    #slogan {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .grid-container {
+        display: inline;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 30px;
+        }
+}        
